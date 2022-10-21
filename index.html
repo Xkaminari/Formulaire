@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="card">
+    <div class="form_area">
+        <h2>Sign in</h2>
+
+        <form>
+            <div class="fild">
+                <label for="first_name">First Name: *</label>
+                <input type="text" id="first_name"/>
+                <p></p>
+            </div>
+    
+            <div class="fild">
+                <label for="Last_name">Last Name: *</label>
+                <input type="text" id="Last_name"/>
+                <p></p>
+            </div>
+    
+            <div class="fild">
+                <label for="email">Email: *</label>
+                <input type="email" id="email" placeholder="exemple@gmail.com"/>
+                <p></p>
+            </div>
+    
+            <div class="fild">
+                <label for="mdp">Password: *</label>
+                <input type="password" id="mdp" placeholder="exemple: Uj4D/8hjz$"/>
+                <p></p>
+            </div>
+    
+            <div class="fild">
+                <label for="confirm_mdp">Confirm Password: *</label>
+                <input type="password" id="confirm_mdp"/>
+                <p></p>
+            </div>
+        </form>
+
+        <button class="register_buttom" type="button">Register</button>
+    </div>
+
+    <div class="form_details">
+        <h1>HTML CSS Sign in Form</h1>
+        <p>
+        This loging is created using pure HTML AND CSS. For social icons,
+        FontAwesome is used
+        </p>
+    </div>
+
+    <div class="user_data">
+        <h2>User's informations</h2>
+
+        <label for="first_name_saved">Your first name:</label>
+        <p id="first_name_saved"></p>
+
+        <label for="last_name_saved">Your last name:</label>
+        <p id="last_name_saved"></p>
+
+        <label for="email_saved">Your email:</label>
+        <p id="email_saved"></p>
+    </div>
+    </div>
+</body>
+</html>
