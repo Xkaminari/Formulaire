@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <title>Formulaire</title>
+    <title>Form</title>
 </head>
 <body>
     <div class="card">
@@ -17,56 +17,61 @@
             <div class="fild">
                 <label for="first_name">First Name: *</label>
                 <input type="text" id="first_name"/>
-                <p></p>
+                <p class="error_msg"></p>
             </div>
     
             <div class="fild">
                 <label for="Last_name">Last Name: *</label>
                 <input type="text" id="Last_name"/>
-                <p></p>
+                <p class="error_msg"></p>
             </div>
     
             <div class="fild">
                 <label for="email">Email: *</label>
                 <input type="email" id="email" placeholder="exemple@gmail.com"/>
-                <p></p>
+                <p class="error_msg"></p>
             </div>
     
             <div class="fild">
                 <label for="mdp">Password: *</label>
                 <input type="password" id="mdp" placeholder="exemple: Uj4D/8hjz$"/>
-                <p></p>
+                <p class="error_msg"></p>
             </div>
     
             <div class="fild">
                 <label for="confirm_mdp">Confirm Password: *</label>
                 <input type="password" id="confirm_mdp"/>
-                <p></p>
+                <p class="error_msg"></p>
             </div>
         </form>
 
-        <button class="register_buttom" type="button">Register</button>
+        <button class="register_buttom" type="submit">Register</button>
+        <p  class="error_msg"></p>
     </div>
 
     <div class="form_details">
         <h1>HTML CSS Sign in Form</h1>
         <p>
         This loging is created using pure HTML AND CSS. For social icons,
-        FontAwesome is used
+        FontAwesome is used.
         </p>
     </div>
-
     <div class="user_data">
         <h2>User's informations</h2>
-
-        <label for="first_name_saved">Your first name:</label>
-        <p id="first_name_saved"></p>
-
-        <label for="last_name_saved">Your last name:</label>
-        <p id="last_name_saved"></p>
-
-        <label for="email_saved">Your email:</label>
-        <p id="email_saved"></p>
+        <div class="data_main_section">
+            <div>
+                <label class="data_label" for="first_name_saved">Your first name:</label>
+                <p class="data" id="first_name_saved"></p>
+            </div>
+            <div>
+                <label class="data_label" for="last_name_saved">Your last name:</label>
+                <p class="data" id="last_name_saved"></p>
+            </div>
+            <div>
+                <label class="data_label" for="email_saved">Your email:</label>
+                <p class="data" id="email_saved"></p>
+            </div>
+        </div>
     </div>
     </div>
 </body>
